@@ -4,6 +4,7 @@ pragma solidity ^0.8.13;
 contract StakeContract { 
     mapping (address => uint) balances;
     uint public totalStacked;
+    mapping (address => uint) rewards;
 
     constructor () {
 
@@ -24,7 +25,7 @@ contract StakeContract {
     }
 
     function claimReward() public {
-
+        
     }
 
     function getReward() public {
